@@ -13,7 +13,6 @@
 }
 
 #profilePic {
-  border: 5px!important;
   width: 40px;
   height: 40px;
   margin-top: 1rem;
@@ -34,7 +33,6 @@
   text-align: center;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  border: none!important;
 }
 
 #convSearchBarForm {
@@ -70,8 +68,9 @@
   height: 30px;
   margin: 7px!important;
   text-align: center;
-  border: none!important;
+  border-radius: 10%!important;
   padding: 0px!important;
+  border: 1px;
 }
 
 #topNavConversation {
@@ -154,11 +153,10 @@ a:hover {
 }
 
 .sent {
-  margin: 3px;
+  margin: 5px;
 }
 
 .sent.profile {
-  border: 5px;
   width: 60px;
 }
 
@@ -167,10 +165,10 @@ a:hover {
   margin: 0px!important;
   border: 1px solid;
   border-radius: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
   color: #b1b4cb;
   background-color: #333547;
   border-color: #333547;
@@ -187,12 +185,11 @@ a:hover {
 }
 
 .received.profile {
-  border: 5px;
   width: 60px;
 }
 
 .received {
-  margin: 3px;
+  margin: 5px;
 }
 
 .received.content {
@@ -200,10 +197,10 @@ a:hover {
   margin: 0px!important;
   border: 1px solid;
   border-radius: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
   color: #292b3a;
   background-color: #c8cad9;
   border-color: #c8cad9;
@@ -264,6 +261,7 @@ a:hover {
 
 .sidebar-dark .nav-item .nav-link.active, .sidebar-dark .nav-item .nav-link.active i, .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:active i, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:focus i, .sidebar-dark .nav-item .nav-link:hover, .sidebar-dark .nav-item .nav-link:hover i {
   color: #c1999a;
+  background-color: rgba(0,0,0,10%);
 }
 
 .convSearchButton {
@@ -456,5 +454,19 @@ body {
   color: #333547;
   text-decoration: none;
   background-color: #c1999a;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem #3f80aa;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 .2rem #3f80aa;
+}
+
+.borderSetting {
+  border: 1px!important;
+  border-radius: 10%!important;
+  border-color: #292b3a!important;
 }
 
