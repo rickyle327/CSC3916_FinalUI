@@ -38,12 +38,16 @@
 #convSearchBarForm {
   margin: 0px!important;
   padding: 10px;
+  vertical-align: middle;
 }
 
 #convSearchBarText {
   margin-left: 10px!important;
   border-radius: 2px;
   background: #c8cad9!important;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 #convSearchBarButton {
@@ -302,7 +306,7 @@ a:hover {
 }
 
 #wrapper #content-wrapper {
-  background-color: #3c3d4b;
+  background-color: #333547;
   width: 100%;
   overflow-x: hidden;
 }
@@ -468,5 +472,13 @@ body {
   border: 1px!important;
   border-radius: 10%!important;
   border-color: #292b3a!important;
+}
+
+#contactAddButton {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #679475;
 }
 

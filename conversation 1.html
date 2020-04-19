@@ -20,10 +20,11 @@
                 <div class="text-center d-none d-md-inline"></div>
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item dropdown no-arrow" role="presentation"><img class="border rounded-0 img-profile borderSetting" id="profilePic" src="assets/img/avatars/avatar4.jpeg"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" id="nav1content" href="conversation%201.html"><i class="fas fa-comments" id="nav1icon"></i></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="nav1content" href="contacts.html"><i class="fas fa-address-book" id="nav1icon"></i></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="nav1content" href="profile%20setting.html"><i class="fas fa-wrench" id="nav1icon"></i></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="nav1content" href="#signout"><i class="fas fa-door-open" id="nav1icon"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" id="nav1content" href="conversation%201.html"><i class="fas fa-comments" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" id="nav1icon" title="Conversations"></i></a></li>
+                    <li class="nav-item"
+                        role="presentation"><a class="nav-link" id="nav1content" href="contacts.html"><i class="fas fa-address-book" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" id="nav1icon" title="Contacts"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="nav1content" href="profile%20setting.html"><i class="fas fa-wrench" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" id="nav1icon" title="Profile settings"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="nav1content" href="#signout"><i class="fas fa-door-open" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" id="nav1icon" title="Log Out"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -37,7 +38,7 @@
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="conversation%201.html"><img class="border rounded-0 img-profile borderSetting" id="convProfilePic" src="assets/img/avatars/avatar2.jpeg"><span>Emma</span></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="conversation%202.html"><img class="border rounded-0 img-profile borderSetting" id="convProfilePic" src="assets/img/avatars/avatar5.jpeg"><span>CSCI3916 (3 users)</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link"><i class="fa fa-plus" style="padding-left: 13px;padding-right: 9px;"></i><span>Start a group chat</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="conversation%203%20-%20new%20group%20profile.html"><i class="fa fa-plus" style="padding-left: 13px;padding-right: 9px;"></i><span>Start a group chat</span></a></li>
                     <li class="nav-item" role="presentation"></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"></div>
@@ -46,7 +47,7 @@
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top" id="topNav">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button><a class="active" id="topNavHeader" href="profile.html"><img class="border rounded-0 img-profile borderSetting" id="topNavProfilePic" src="assets/img/avatars/avatar2.jpeg"><span id="topNavConversation">Emma</span></a>
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button><a class="active" id="topNavHeader" href="profile.html"><img class="border rounded-0 img-profile borderSetting" id="topNavProfilePic" src="assets/img/avatars/avatar2.jpeg"><span data-toggle="tooltip" data-bs-tooltip="" data-placement="right" id="topNavConversation" title="See Contact Profile">Emma</span></a>
                         <div
                             class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="topNavDropdownMenu" href="#">Conversation Setting</a>
                             <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Remove Contact</a><a class="dropdown-item" role="presentation" href="#">Block Contact</a></div>
@@ -55,7 +56,7 @@
             </nav>
             <div id="chatbackground">
                 <div class="row text-left sent">
-                    <div class="col-2 col-lg-2 col-xl-1 offset-lg-0" style="text-align: center;padding: 0px!important;"><img class="sent profile borderSetting" src="assets/img/avatars/avatar2.jpeg"></div>
+                    <div class="col-2 col-lg-2 col-xl-1 offset-lg-0" style="text-align: center;padding: 0px!important;"><img data-toggle="tooltip" data-bs-tooltip="" data-placement="right" class="sent profile borderSetting" src="assets/img/avatars/avatar2.jpeg" title="Your personal remarks about this person!"></div>
                     <div class="col-lg-6 text-left">
                         <p class="sent username">Emma</p>
                         <p class="sent content">Hello, I am Emma.&nbsp; Hello, I am Emma.&nbsp;Hello, I am Emma.<br></p>
@@ -100,6 +101,7 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/chat.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/theme.js"></script>

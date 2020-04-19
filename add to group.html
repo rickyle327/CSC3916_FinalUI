@@ -21,7 +21,7 @@
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item dropdown no-arrow" role="presentation"><img class="border rounded-0 img-profile borderSetting" id="profilePic" src="assets/img/avatars/avatar4.jpeg"></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" id="nav1content" href="conversation%201.html"><i class="fas fa-comments" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" id="nav1icon" title="Conversations"></i></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" id="nav1content" href="contacts.html"><i class="fas fa-address-book" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" id="nav1icon" title="Contacts"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="nav1content" href="contacts.html"><i class="fas fa-address-book" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" id="nav1icon" title="Contacts"></i></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" id="nav1content" href="profile%20setting.html"><i class="fas fa-wrench" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" id="nav1icon" title="Profile settings"></i></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" id="nav1content" href="#signout"><i class="fas fa-door-open" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" id="nav1icon" title="Log Out"></i></a></li>
                 </ul>
@@ -30,7 +30,7 @@
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top" id="topNav">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button><a class="active" id="topNavHeader" href="profile.html"><span id="topNavConversation">Your Contacts</span></a>
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button><a class="active" id="topNavHeader" href="profile.html"><span id="topNavConversation">Add to <strong>CSCI3916</strong></span></a>
                         <form
                             class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" id="convSearchBarForm">
                             <div class="input-group"><input class="bg-light form-control border-0 small" type="text" id="convSearchBarText" placeholder="Search for ..." style="height: 34px;"><button class="btn btn-primary convSearchButton" id="convSearchBarButton" style="height: 34px;"><i class="fas fa-search"></i></button></div>
@@ -50,6 +50,7 @@
                                             <th>Username</th>
                                             <th>User ID</th>
                                             <th style="text-align: center;">Action</th>
+                                            <th>Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -57,30 +58,34 @@
                                             <td><img class="mr-2 borderSetting" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
                                             <td>123</td>
                                             <td id="contactButtonCell">
-                                                <div class="btn-group" role="group"><button class="btn btn-primary" id="contactRemoveBlockButton" type="button">Remove</button><button class="btn btn-primary" id="contactRemoveBlockButton" type="button">Block</button></div>
+                                                <div class="btn-group" role="group"><button class="btn btn-primary" id="contactRemoveBlockButton" type="button">Remove from group</button></div>
                                             </td>
+                                            <td>In group</td>
                                         </tr>
                                         <tr>
                                             <td><img class="mr-2 borderSetting" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Angelica Ramos</td>
                                             <td>123</td>
                                             <td id="contactButtonCell">
-                                                <div class="btn-group" role="group"><button class="btn btn-primary" id="contactRemoveBlockButton" type="button">Remove</button><button class="btn btn-primary" id="contactRemoveBlockButton" type="button">Block</button></div>
+                                                <div class="btn-group" role="group"><button class="btn btn-primary" id="contactRemoveBlockButton" type="button">Remove from group<br></button></div>
                                             </td>
+                                            <td>In group</td>
                                         </tr>
                                         <tr>
                                             <td><img class="mr-2 borderSetting" width="30" height="30" src="assets/img/avatars/avatar3.jpeg">Ashton Cox</td>
                                             <td>123</td>
                                             <td id="contactButtonCell">
-                                                <div class="btn-group" role="group"><button class="btn btn-primary" id="contactRemoveBlockButton" type="button">Remove</button><button class="btn btn-primary" id="contactRemoveBlockButton" type="button">Block</button></div>
+                                                <div class="btn-group" role="group"><button class="btn btn-primary" id="contactRemoveBlockButton" type="button">Remove from group<br></button></div>
                                             </td>
+                                            <td>In group</td>
                                         </tr>
-                                        <tr></tr>
-                                        <tr></tr>
-                                        <tr></tr>
-                                        <tr></tr>
-                                        <tr></tr>
-                                        <tr></tr>
-                                        <tr></tr>
+                                        <tr>
+                                            <td><img class="mr-2 borderSetting" width="30" height="30" src="assets/img/user-photo4.jpg">Ashley Benson</td>
+                                            <td>123</td>
+                                            <td id="contactButtonCell">
+                                                <div class="btn-group" role="group"><button class="btn btn-primary" id="contactAddButton" type="button">Add to group<br></button></div>
+                                            </td>
+                                            <td>Not in</td>
+                                        </tr>
                                     </tbody>
                                     <tfoot>
                                         <tr></tr>
